@@ -1,0 +1,545 @@
+{%include "./partials/header.ejs"%}
+
+<!-- <div class = "right-sidebar">
+    <header>My Heading</header>
+    <ul>
+        <li>  <a href="#sushi">Overview </a></li>
+        <li>  <a href="#panda">Availability</a></li>
+        <li>  <a href="#monke">Real-Time Monitoring</a></li>
+        <li>  <a href="#snake">Daily Status </a></li>
+        <li>  <a href="#doge">Visibility Calculation</a></li>
+        <li>  <a href="#kong">GDOP Calculation</a></li>
+    </ul>
+</div> -->
+<div class="dropdown-sidebar">
+  <a href="#sushi">What is Gnss ?</a>
+  <a href="#panda">Fundamental</a>
+  <a href="#monke">Receivers</a>
+  <a href="#snake">Applications</a>
+  <a href="#doge">FAQ</a>
+  <!-- <a href="#kong">GDOP Calculation</a> -->
+</div>
+
+<div class="gps-home-text">
+  <div id="sushi">
+    <h4 style="padding-top: 50px">What is Gnss ?</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 20px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      Global Navigation Satellite System (GNSS) refers to a constellation of
+      satellites providing signals from space that transmit positioning and
+      timing data to GNSS receivers. The receivers then use this data to
+      determine location.
+    </p>
+
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      By definition, GNSS provides global coverage. Examples of GNSS include
+      Europe’s Galileo, the USA’s NAVSTAR Global Positioning System (GPS),
+      Russia’s Global'naya Navigatsionnaya Sputnikovaya Sistema (GLONASS) and
+      China’s BeiDou Navigation Satellite System.
+    </p>
+    <img class="one" alt="Picture1" src="assets/gnss/Picture1.png" />
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The performance of GNSS is assessed using four criteria: Accuracy: the
+      difference between a receiver’s measured and real position, speed or time;
+      Integrity: a system’s capacity to provide a threshold of confidence and,
+      in the event of an anomaly in the positioning data, an alarm; Continuity:
+      a system’s ability to function without interruption; Availability: the
+      percentage of time a signal fulfils the above accuracy, integrity and
+      continuity criteria. This performance can be improved by regional
+      satellite-based augmentation systems (SBAS), such as the European
+      Geostationary Navigation Overlay Service (EGNOS). EGNOS improves the
+      accuracy and reliability of GPS information by correcting signal
+      measurement errors and by providing information about the integrity of its
+      signals.
+    </p>
+  </div>
+  <div id="panda">
+    <h4 style="padding-top: 50px">Fundamental</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The GNSS consist of three main satellite technologies: GPS, Glonass and
+      Galileo. Each of them consists mainly of three segments: (a) space
+      segment, (b) control segment and (c) user segment. These segments are
+      almost similar in the three satellite technologies, which are all together
+      make up the GNSS.
+    </p>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      As of today, the complete satellite technology is the GPS technology and
+      most of the existing worldwide applications related to the GPS technology.
+      The GNSS technology will become clearer after the operation of Galileo and
+      the reconstruction of Glonass in the next few years. 2.1 Global
+      Positioning System: The United States Department of Defense (DoD) has
+      developed the Navstar GPS, which is an all-weather, space based navigation
+      system to meet the needs of the USA military forces and accurately
+      determine their position, velocity, and time in a common reference system,
+      any where on or near the Earth on a continuous basis (Wooden, 1985). GPS
+      has made a considerable impact on almost all positioning, navigation,
+      timing and monitoring applications. It provides particularly coded
+      satellite signals that can be processed in a GPS receiver, allowing the
+      receiver to estimate position, velocity and time (Hofmann-Wellenhof et
+      al., 2001). There are four GPS satellite signals that are used to compute
+      positions in three dimensions and the time offset in the receiver clock.
+      GPS comprises three main components: - Space segment: The Space Segment of
+      the system consists of the GPS satellites; see Figure 1. These space
+      vehicles (SVs) send radio signals from space as shown in Figure 2. -
+      Control segment: The Control Segment consists of a system of tracking
+      stations located around the world. The Master Control facility is located
+      at Schriever Air Force Base (formerly Falcon AFB) in the State of
+      Colorado, USA. - User segment: The GPS User Segment consists of the GPS
+      receivers and the user community. GPS receivers convert space vehicle (SV)
+      signals into position, velocity, and time estimates.
+    </p>
+    <img class="one" alt="Picture1" src="assets/gnss/Picture4.png" />
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The satellites are dispersed in six orbital planes on almost circular
+      orbits with an altitude of about 20,200 km above the surface of the Earth,
+      inclined by 55 degree with respect to the equator and with orbital periods
+      of approximately 11 hours 58 minutes (half a sidereal day). The categories
+      are Block I, Block II, Block IIR (R for replenishment) and Block IIA (A
+      for advanced) and a further follow-on category Block IIF has also been
+      planned (ICD-GPS, 2003). Figure 3 shows the main GPS segments.
+    </p>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The generated signals on board the satellites are based or derived from
+      generation of a fundamental frequency ƒo=10.23 MHZ (Hofmann-Wellenhof et
+      al., 2001). The signal is controlled by atomic clock and has stability in
+      the range of 13 10− over one day. Two carrier signals in the L-band,
+      denoted L1 and L2, are generated by integer multiplications of ƒo. The
+      carriers L1 and L2 are biphase modulated by codes to provide satellite
+      clock readings to the receiver and transmit information such as the
+      orbital parameters. The codes consist of a sequence with the states +1 or
+      -1, corresponding to the binary values 0 or 1. The biphase modulation is
+      performed by a 180° shift in the carrier phase whenever a change in the
+      code state occurs; see Figure 4. The clear/access code (C/A-code) and
+      precision code (P-code) are used for the satellite clock reading, both are
+      characterized by a pseudorandom noise (PRN) sequence. The W-code is
+      employed to encrypt the P-code to the Y-code when Anti Spoofing (A-S) is
+      applied. The navigation message is modulated using the two carriers (L1
+      and L2) at a chipping rate of 50 bps.
+    </p>
+    <img class="one" alt="Picture1" src="assets/gnss/Picture5.png" />
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The signal broadcast by the satellite is a spread spectrum signal, which
+      makes it less prone to jamming. The basic concept of spread spectrum
+      technique is that the information waveform with small bandwidth is
+      converted by modulating it with a large-bandwidth waveform
+      (HofmannWellenhof et al., 2001). The generation of pseudo random sequence
+      (PRN) in the code is based on the use of an electronic hardware device
+      called tapped feed back shift register (FBSR). This device can generate a
+      large variety of pseudo random codes, but in this way the generated code
+      repeat it self after some very long time. The receiver could distinguish
+      the signals coming from different satellites because the receiving C/A
+      code (the Gold code), has low cross-correlation and is unique for each
+      satellite (Leick, 2003). The navigation message consists of 25 frames with
+      each frame containing 1500 bit and each frame is subdivided into 5
+      sub-frames with 300 bit. The information transmitted by the navigation
+      message is periodically updated by the control segment.
+    </p>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      Modernized GPS Due to the vast civil applications of GPS technology during
+      the past decade or so and due to the new technologies used in the
+      satellite and receivers, the U.S government has decided to extend the
+      capabilities of GPS to give more benefits to the civil community. In
+      addition to the existing GPS signals, new signals will be transmitted by
+      GPS satellite; see Figure 5. Moreover, this will increase the robustness
+      in the signals and improve the resistance to signal interference. This
+      definitely will lead to a better quality of service (QoS). The new signals
+      added to the GPS (Fontana et al., 2001), are: (i) a new L5 frequency in an
+      aeronautical radio navigation service (ARNS) band with a signal structure
+      designed to improve aviation applications, (ii) C/A code to L2C carrier
+      (L2 civil signal ), and (iii) a new military (M) code on L1 and L2
+      frequency for the DoD has been added. It has the potential to track signal
+      even in poor conditions where the C/A code tracking on L1 would not be
+      possible. The new military code will be transmitted from the Block IIR-M
+      and IIF satellites3 GLONASS The GLONASS (GLObal NAvigation Satellite
+      System or “GLObalnaya NAvigatsionnaya Sputnikovaya Sistema”) is nearly
+      identical to GPS. Glonass satellite-based radio-navigation 9 system
+      provides the positioning and timing information to users. It is operated
+      by the Ministry of Defense of the Russian Federation (GLONASS-ICD, 2002).
+      Glonass space segment is consist of 24 satellites, equally distributed in
+      3 orbit separated by o 120 in the equatorial plane. Satellite orbital
+      altitude is about 19,130 km above the ground surface. This results in an
+      orbital period of 11:15:44 corresponding to 8/17 of a sidereal day. The
+      future of GLONASS seems uncertain due to economic problems facing the
+      Russian Federation. The number of operational satellites was steadily
+      decreasing over the past few years. The launch of three new GLONASS
+      satellites in December 1998 was the first launch after a lapse of 3 years.
+    </p>
+  </div>
+  <div id="monke">
+    <h4 style="padding-top: 50px">Receivers</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The main function of the signal processor in the receiver is the
+      reconstruction of the carriers and extraction of codes and navigation
+      messages. After this stage the receiver performs the Doppler shift
+      measurement by comparing the received signal by a reference signal
+      generated by the receiver. Due to the motion of satellite, the received
+      signal is Doppler shifted. The code ranges are determined in the delay
+      lock loop (DLL) by using code correlation. The correlation technique
+      provides all components of bimodulated signals. The correlation technique
+      is performed between the generated reference signal and the received one
+      (Hofmann-Wellenhof et al., 2001). The signals are shifted with respect to
+      time so that they are optimally matched based on mathematical correlation.
+      Currently some geodetic type receivers are available on the market
+      tracking GPS and Glonass satellites simultaneously on both frequencies, in
+      particular the Ashtech Z18 receiver and the TPS (Topcon Positioning
+      Systems) Legacy receivers. The future GNSS receiver could be designed to
+      track the different GNSS signals and could be of many types:
+    </p>
+    <p  style="
+    font-size: 20px;
+    padding-top: 25px;
+    margin: 25px 50px 75px 100px;
+    text-align: justify;
+  ">
+      • The first type could process all GNSS signals GPS L1, L2, L5 and Galileo    OS, CS using L1, E5 and E6 and also Glonass L1 and L2.
+      </p>
+      <p  style="
+      font-size: 20px;
+      padding-top: 5px;
+      margin: 25px 50px 75px 100px;
+      text-align: justify;
+    ">
+        • The second type uses free signal and codes, GPS L1 and L2C and Galileo OS, on L1 and E5.
+        </p>
+        <p  style="
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      ">
+          • The third type uses L1 and E5.
+          </p>
+          <p  style="
+          font-size: 20px;
+          padding-top: 5px;
+          margin: 25px 50px 75px 100px;
+          text-align: justify;
+        ">
+           • Forth type uses GPS L1 and L2 (which are already in the market (Ries et al., 2002). 
+            </p>
+            <p  style="
+            font-size: 20px;
+            padding-top: 5px;
+            margin: 25px 50px 75px 100px;
+            text-align: justify;
+          ">
+             • Fifth type uses GPS and Glonass signals (which are already exist), (Leick, 2003).
+              </p>
+            </p>
+            <p  style="
+            font-size: 20px;
+            padding-top: 5px;
+            margin: 25px 50px 75px 100px;
+            text-align: justify;
+          ">
+              The most common receiver types are Intermediate Frequency receiver (IF) and the software defined radio receiver (SDR). In the RF front-end receiver the signal is down converted to an intermediate frequency and then sampled, but SDR uses direct digitization, or bandpass sampling. Details on GNSS receiver design could be found in (Schmid et al., 2004; Julien et al., 2004a). The main components of RF-FE combined GNSS receiver are shown in Figure 8. After sampling and analog to digital conversion (ADC) of the received signal, the receiver performs parallel despreading. The received base-band signal is multiplied in parallel with the spreading codes of all visible satellites. The received signal of each satellite is multiplied in parallel with different code delay offsets. These products are then accumulated to compute the cross-correlation function. 
+              </p>    
+              <img class="one" alt="Picture1" src="assets/gnss/Picture6.png" /> 
+            </p>
+            <p  style="
+            font-size: 20px;
+            padding-top: 5px;
+            margin: 25px 50px 75px 100px;
+            text-align: justify;
+          ">
+              Because BOC signals are used in Galileo, supplementary measures are necessary due to the multiple correlation peaks of the auto-correlation function. Carrier tracking is performed using a phase-locked or frequency-locked loop (PLL or FLL). Coherent correlation combined with differential or non-coherent correlation can be done for the pilot and the data channel (Schmid et al., 2004). Multiple signals will be available at L1 within the next few years (Hein et al., 2004). Galileo will use a different modulation scheme for its signals such as BOC and QPSK, while 16 GPS uses binary phase shift keying (BPSK) modulation for the open signals at L1 and L2. The L5 signal that will appear with the Block IIF satellites in 2006, will have quadrature phase shift keying (QPSK). The binary offset carrier (BOC) modulation scheme of Galileo provides better multipath and receiver noise performance compared to the GPS binary phase shift keying (BPSK) modulation. More complex techniques are already developed for tracking BOC signal, such as bump jump and BPSK-like.
+              </p>    
+
+
+  </div>
+  <div id="snake">
+    <h4 style="padding-top: 50px">Applications</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+    GNSS applications are applications that use GNSS systems for its functionality. GNSS applications use GNSS Receivers to collect position, velocity and time information to be used by the application. In some specific cases other measurements output by the receiver might be used. The receivers might be generic all purpose receivers or can be built specifically having the application in mind.                                                                                              The initial objective of the first GNSS systems was military. But with the free availability of GNSS signal and the availability of cheap GNSS receivers, the GNSS technology is having a pervasive use in civil, industrial, scientific and military areas.
+
+    The European Satellite Navigation Competition recognises the best ideas in the field of downstream applications based on satellite navigation.
+    </p>
+    <h1 style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      ">LOCATION BASED SERVICES</h1>
+      <p style="
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;"
+      >
+      Location Based Services (LBS) include applications that depend on the user location to provide a service/information that is relevant to the user at that location. LBS normally use mobile devices with positioning ability to provide the service or information to the user. LBS can be used for personal or professional purposes although most of the services covered here are for personal use since professional services will be covered in other sections.
+Different types of Location Based Services are:Location based Information Streams
+Tourist Information
+Games
+Carpooling and Transport on Demand
+
+">CIVIL APPLICATIONS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+The initial purpose of the first GNSS systems (GPS and GLONASS) was military but very early in the experimental phase of GPS the incident with the Korean Air Lines Flight 007 lead the US Government to issue a directive making GPS freely available for civilian purposes. Currently the use of GNSS systems in Civil Applications is generalized and every GNSS system in operation or in construction takes civil applications as one of the most important uses of GNSS systems.
+Different types of civil applications are:
+Personal Applications
+Road Applications
+Aviation Applications
+Rail Applications
+Maritime Applications
+Industry Applications</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">SURVEYING MAPPING AND GIS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+One of the most obvious uses for GNSS systems is the realization of surveys and production of maps. Although a simple standalone GNSS Receiver might not have the required precision for some survey requirements, most of these requirements can be fulfilled using high-end dual frequency multi-constellation receivers built specifically for surveying and by using GNSS Augmentation techniques. The use of GNSS techniques in geodesy have revolutionized the way geodetic measurements are made. An increasing number of national governments and regional organizations are using GNSS measurements as the basis for their geodetic networks.
+Different types of Surveying, Mapping and GIS Applications are:
+Land Surveying
+Mapping & GIS
+Aerial Survey
+</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">GNSS BASED PRODUCTS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+With the decrease of the price and miniaturization of GNSS chipsets the number of products that include GNSS receivers increases every day. This trend has caused the improvement of existing products with the addition of GNSS capabilities and the outburst of new GNSS-based products. The global shipments of GNSS-enabled LBS devices have grown from 150 million to 800 million between 2008 and 2013 corresponding to 40% CAGR. This phenomenal growth is also due to rapid economic growth in some very populated regions of the globe. In addition the application stores are also playing an important role since 40% of the available applications use location information, according to the estimates provided by GNSS Market Report, Issue 3.
+Different types of GNSS-based products are:
+Personal Products
+Road Products
+Aviation Products
+Maritime Products
+</p>
+<img class="one" alt="Picture1" src="assets/gnss/Picture7.png" />
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">SPACE APPLICATIONS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+GNSS systems were originally designed for earth-based positioning and navigation. Despite this, real-time spacecraft navigation based on spaceborne GNSS receivers is becoming a common technique for low-Earth orbits and geostationary orbits, allowing satellites to self-determine their position using GNSS, reducing dependence on ground-based stations.
+
+The space community started experimenting with spaceborne receivers very early in the deployment of the GPS network. The first spaceborne GNSS receiver was deployed in Landsat 4 in July 16th 1982. The GPSPAC receiver deployed with Landsat 4 was also deployed with Landsat 5 and 2 other US Department of Defense missions and despite the few number of GPS satellites deployed (at that time only 6 Block I satellites were deployed), the GPSPAC was able to demonstrate the feasibility of using GNSS for space navigation.
+
+Different types of Space Applications are:
+Precise Orbit Determination
+Satellite Formation Flying</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">SCIENTIFIC APPLICATION</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+GNSS systems offer important contributions in a variety of scientific research domains. As a matter of fact, a good part of the progress achieved in recent years is due to new or improved data analysis techniques, jointly with a growing variety of available measurements. In addition the already implemented GNSS systems are evolving and new systems are being developed, such as Galileo and BeiDou, which will contribute to further improvements in the current available applications as well to promote new applications.
+Different types of Scientific Applications are:
+Earth Sciences
+Space-time Metrology
+Fundamental Physics</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">MILITARY APPLICATIONS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+The first GNSS systems (GPS and GLONASS) were developed for military purposes and only later in the development of these systems it was decided to open then to civilian use. Still today the military applications are one of the drivers for these systems. For instance GPS makes available 2 services: the Precise Positioning Service and the Standard Positioning Service. The Precise Positioning Service is encrypted and is only available to the US military and its allies.
+Different types of Military Applications are:
+Military Navigation
+Target Acquisition</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">AUTONOMOUS APPLICATION</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+Driverless cars are ubiquitous in imagined future scenarios. Autonomous vehicles technology is a multi-disciplinary technology where different engineering areas, such as Navigation, are required. GNSS systems where revolutionary in the area of Navigation by providing positioning and navigation capabilities to the autonomous vehicles. With precise positioning, GNSS can be used for lane or track determination (for road and rail vehicles) and attitude determination by using multiple antennas. Autonomous vehicle technology is still at its infancy but currently the first laboratory prototypes are being tested and demonstrated. GNSS has been one of the key drivers for the recent developments in this area.
+Different types of Autonomous Applications are:
+Autonomous Driving
+Autonomous Flying</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">OTHER APPLICATIONS</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+The main objective of GNSS systems is to provide positioning but by design other information is available or can be derived from the measurements gathered by GNSS receivers. This led to less conventional uses of the technology in application areas that were not initially envisioned. By design GNSS systems deliver precise time along with the position and velocity of the user. This capability has been used to provide a precise time reference in different areas such as financial transactions and stock markets. One other example of a less conventional use of GNSS technology is the use of the measured interference of the atmosphere on the GNSS signals to do atmospheric sensing.
+Other Applications types are:
+Precise Time Reference
+Atmospheric Sensing</p>
+
+
+
+  </div>
+  <div id="doge">
+    <h4 style="padding-top: 50px">FAQ</h4>
+    <h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">The basics of GPS and GNSS explained:</h1>
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+The acronym “GPS” stands for Global Positioning System. This system is a constellation of 24 or more satellites that orbit the Earth. These satellites provide information that allows them to be used for accurate position, navigation, and timing applications. Originally, GPS was called “NAVSTAR”, which stands for Navigation Satellite Timing and Ranging. NAVSTAR was developed by the U.S. Department of Defense to provide accurate navigation and guidance for worldwide military operations.
+This was the first worldwide real-time autonomous positioning system that became fully operational in 1995. GPS is the first of several Global Navigation Satellite Systems, more commonly known as GNSS. GNSS is a more recent generic term to refer to one or many of the Global Navigation systems available today. The GNSS systems that are currently available in their countries of origin GPS – US, GALILEO – Europe, GLONASS – Russia, and BEIDOU (Compass) – China. There are also Regional Navigation Satellite Systems, such as QZSS (Japan) and IRNSS (India).</p>
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+">GPS/GNSS accuracy claims and making comparisons:</h1>    
+
+
+<img class="one" alt="Picture1" src="assets/gnss/Picture8.jpeg" />
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+To put this into perspective, if the specifications for the GPS receiver state a horizontal distance accuracy of 2 meters CEP, this means that during testing the locations coordinates of data points collected with the receiver were found to be within a 2 meters radius 50% of the time. That means that in any sample of data, 50% would also be greater than the stated accuracy of 2 meters. If we convert the CEP value to 2DRMS, then the accuracy would be closer to 4.16 meters.
+The stated accuracy of a GNSS (GPS) receiver is in relative terms. It is important to understand the test criteria of the stated accuracy for each receiver. When comparing the accuracy of different receivers from different manufacturers to each other, especially those that state to provide higher accuracy such as sub-meter or better. It is also beneficial to consider performing your own testing with each receiver you are considering for purchase. Testing the receiver in your own applicable operating conditions will give you a good idea of what to expect from the device in the environments it will be used in. </p> 
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+"> How to improve and get the most out of a GPS:</h1> 
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+To get the most out of your GPS, our in-house expert John Florio, recommends thinking of your GPS data collection tools as a system; each component has a part in delivering the desired accuracy. Using appropriate supporting equipment can assist in achieving better accuracy. Using a survey pole or GPS rover rod you can get consistent antenna height when capturing elevation data. This supporting equipment makes it easier to consistently position the receiver where you want to take points. The pole helps place the device at a higher location to avoid obstacles and clear the GPS receiver of your body. </p> 
+<h1 style="
+font-size: 20px;
+padding-top: 25px;
+margin: 25px 50px 75px 100px;
+text-align: justify;
+"> How GPS ruggedness is a benefit</h1> 
+<p style="
+font-size: 20px;
+padding-top: 5px;
+margin: 25px 50px 75px 100px;
+text-align: justify;">
+Depending on the work environment, the level of ruggedness your GPS receiver or Geographic Information System (GIS) solution can determine the longevity of your investment. Having a field-ready GIS solution backed with world-class support is a benefit that can’t be ignored. Determining whether or not the device you are looking at is rugged depends on a few factors. These factors include, but are not limited to: operating temperature, storage temperature, drop testing, and enclosure rating.
+A rugged GPS receiver means that you don’t have to worry about the environments you find yourself in. For example, the Geode Sub-meter GPS receiver can work in operating temperatures of -20 °C to +60 °C and be stored between the temperatures of -30 °C to +60 °C. The Geode also meets or exceeds the drop, vibration, temperature, and IEC-60529 tests. Why the ease of use for your GPS device brings superiority
+Since time is money, we recommend getting a GPS receiver that can easily receive, share, and store information captured in the field. A quality receiver system includes a precision antenna that is capable of providing the very best signal reception for the receiver. The receivers are tested by manufacturers to ensure the hardware and software included are capable of delivering the performance stated. The receivers are constructed of materials that make them suitable for working in the intended environment. Ultimately, making it so your experience is hassle-free to achieve superiority.
+With the Geode Sub-Meter GPS Receiver and Mesa Rugged Tablet, you can efficiently and effectively train your team to be in the field and ready to go in no time at all.  Users will be able to sync data to high-speed data networks and wireless communication systems quickly. This is done with the Mesa Rugged Tablet and its cellular connectivity. Making it so you can eliminate any wasteful time trying to share data between users. The big benefit is that field operators can focus on their job, capturing data that is of value, with speed to increase productivity. </p>  
+ </div>
+</div>
+
+{%include "./partials/footer.ejs"%}

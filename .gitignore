@@ -1,0 +1,9 @@
+elena/__pycache__/*
+gnss/__pycache__/*
+gnss/__pycache__/urls.cpython-38.pyc
+gnss/__pycache__/views.cpython-38.pyc
+gnss/migrations/0001_initial.py
+gnss/migrations/__pycache__/__init__.cpython-38.pyc
+gnss/migrations/__pycache__/0001_initial.cpython-38.pyc
+gnss/migrations/__pycache__/__init__.cpython-38.pyc
+gnss/migrations/__pycache__/__init__.cpython-38.pyc

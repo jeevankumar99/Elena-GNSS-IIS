@@ -1,0 +1,178 @@
+{% include "./partials/header.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'gnss/css/content.css' %}" />
+
+  <body>
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    <!--Navigation-->
+
+    <div class = "con">
+        
+        <h1>Overview</h1>
+        <div class="image">
+            <img src="{% static 'gnss/assets/irnss/Picture1.png' %}" alt="">
+        </div>
+        <p
+
+        
+        >
+      The Global Positioning System (GPS), originally Navstar GPS, is a
+      satellite-based radionavigation system owned by the United States
+      government and operated by the United States Space Force. It is one of the
+      global navigation satellite systems (GNSS) that provides geolocation and
+      time information to a GPS receiver anywhere on or near the Earth where
+      there is an unobstructed line of sight to four or more GPS satellites.
+      Obstacles such as mountains and buildings can block the relatively weak
+      GPS signals. The GPS does not require the user to transmit any data, and
+      it operates independently of any telephonic or Internet reception, though
+      these technologies can enhance the usefulness of the GPS positioning
+      information. The GPS provides critical positioning capabilities to
+      military, civil, and commercial users around the world. The United States
+      government created the system, maintains and controls it, and makes it
+      freely accessible to anyone with a GPS receiver. The GPS project was
+      started by the U.S. Department of Defense in 1973. The first prototype
+      spacecraft was launched in 1978 and the full constellation of 24
+      satellites became operational in 1993. Originally limited to use by the
+      United States military, civilian use was allowed from the 1980s following
+      an executive order from President Ronald Reagan after the Korean Air Lines
+      Flight 007 incident. Advances in technology and new demands on the
+      existing system have now led to efforts to modernize the GPS and implement
+      the next generation of GPS Block IIIA satellites and Next Generation
+      Operational Control System (OCX).Announcements from Vice President Al Gore
+      and the Clinton Administration in 1998 initiated these changes, which were
+      authorized by the U.S. Congress in 2000. During the 1990s, GPS quality was
+      degraded by the United States government in a program called "Selective
+      Availability"; this was discontinued on May 1, 2000 by a law signed by
+      President Bill Clinton. The GPS service is controlled by the United States
+      government, which can selectively deny access to the system, as happened
+      to the Indian military in 1999 during the Kargil War, or degrade the
+      service at any time. As a result, several countries have developed or are
+      in the process of setting up other global or regional satellite navigation
+      systems. The Russian Global Navigation Satellite System (GLONASS) was
+      developed contemporaneously with GPS, but suffered from incomplete
+      coverage of the globe until the mid-2000 GLONASS can be added to GPS
+      devices, making more satellites available and enabling positions to be
+      fixed more quickly and accurately, to within two meters (6.6 ft). China's
+      BeiDou Navigation Satellite System began global services in 2018, and
+      finished its full deployment in 2020. There are also the European Union
+      Galileo navigation satellite system, and India's NavIC. Japan's
+      Quasi-Zenith Satellite System (QZSS) is a GPS satellite-based augmentation
+      system to enhance GPS's accuracy in Asia-Oceania, with satellite
+      navigation independent of GPS scheduled for 2023. When selective
+      availability was lifted in 2000, GPS had about a five-meter (16 ft)
+      accuracy. GPS receivers that use the L5 band can have much higher
+      accuracy, pinpointing to within 30 centimeters (11.8 in), while high-end
+      users (typically engineering and land surveying applications) are able to
+      have accuracy on several of the bandwidth signals to within two
+      centimeters, and even sub-millimeter accuracy for long-term measurements.
+      As of May 2021, 16 GPS satellites are broadcasting L5 signals, and the
+      signals are considered pre-operational, scheduled to reach 24 satellites
+      by approximately 2027.
+    </p>
+    <p
+
+  >
+    The Architecture of Global Positioning System consists of three segments
+    or units namely: GPS Space Segment GPS Control Segment GPS Receiver
+    (User) Segment
+  </p>
+  
+  <h1>Architecture</h1>
+  <p
+
+>
+  The Space Unit consists of 24 active satellites which are assembled with
+  huge solar panels with rechargeable batteries that act as a power source.
+  The function of the satellites in space is to route or navigate the radio
+  signals received from the control unit to store and re-transmit the
+  message to the respective Receiver Unit.<br></br>
+  Global Positioning System (GPS) Space Segment
+    <br></br>
+
+</p>
+<p
+
+    >
+      The Space Unit consists of 24 active satellites which are assembled with
+      huge solar panels with rechargeable batteries that act as a power source.
+      The function of the satellites in space is to route or navigate the radio
+      signals received from the control unit to store and re-transmit the
+      message to the respective Receiver Unit.<br></br>
+      GALILEO SERVICE LEVEL PERFORMANCES
+        <br></br>
+    </p>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The Control Unit consists of several monitoring and control stations. The
+      monitor stations monitor the GPS satellite signals. These signals are then
+      sent to the master control station where operational specifications are
+      checked and revised before transmitting the control signals back to the
+      GPS satellites. They are sent back through ground antennas.<br></br>
+      GALILEO SERVICE LEVEL PERFORMANCES
+        <br></br>
+    </p>
+    <p
+
+  >
+    The User Unit is the term given to all GPS receivers like mobile phones,
+    laptops, PC or any other device. The devices receives the signals from the
+    GPS satellites and determines how far away it is from each satellite.
+  </p>
+  <h1>NavIC</h1>
+
+  <p
+
+>
+  The six orbit planes have approximately 55° inclination (tilt relative to
+  the Earth's equator) and are separated by 60° right ascension of the
+  ascending node (angle along the equator from a reference point to the
+  orbit's intersection).[82] The orbital period is one-half a sidereal day,
+  i.e., 11 hours and 58 minutes so that the satellites pass over the same
+  locations[83] or almost the same locations[84] every day. The orbits are
+  arranged so that at least six satellites are always within line of sight
+  from everywhere on the Earth's surface (see animation at right).[85] The
+  result of this objective is that the four satellites are not evenly spaced
+  (90°) apart within each orbit. In general terms, the angular difference
+  between satellites in each orbit is 30°, 105°, 120°, and 105° apart, which
+  sum to 360°.[86] Orbiting at an altitude of approximately 20,200 km
+  (12,600 mi); orbital radius of approximately 26,600 km (16,500 mi),[87]
+  each SV makes two complete orbits each sidereal day, repeating the same
+  ground track each day.[88] This was very helpful during development
+  because even with only four satellites, correct alignment means all four
+  are visible from one spot for a few hours each day. For military
+  operations, the ground track repeat can be used to ensure good coverage in
+  combat zones. As of February 2019,[89] there are 31 satellites in the GPS
+  constellation, 27 of which are in use at a given time with the rest
+  allocated as stand-bys. A 32nd was launched in 2018, but as of July 2019
+  is still in evaluation. More decommissioned satellites are in orbit and
+  available as spares.
+</p>
+
+
+        </div>      
+  
+    </div>
+    <my-footer></my-footer>
+    <script type =module src = ../js/custom.js></script>
+
+    <script src="../js/Jquery3.4.1.min.js"></script>
+  
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="../js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="../js/main.js"></script>
+
+      
+    
+  </body>
+</html>

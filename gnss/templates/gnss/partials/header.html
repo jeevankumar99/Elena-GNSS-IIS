@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'gnss/css/all.css'%}">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="{% static 'gnss/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'gnss/css/owl.theme.default.min.css' %}">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="{% static 'gnss/css/aos.css' %}">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="{% static 'gnss/css/Style.css' %}">
+
+    <!-- Jquery Library file -->
+    <script src="{% static 'gnss/js/Jquery3.4.1.min.js' %}"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="{% static 'gnss/js/owl.carousel.min.js' %}"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="{% static 'gnss/js/aos.js' %}"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="{% static 'gnss/js/main.js' %}"></script>
+
+</head>
+
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="{% url 'index' %}" class="text-gray">GNSS</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="{% url 'gnss' %}">Gnss</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'glonass' %}">GLONASS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'galileo' %}">GALILEO</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'beidou' %}">BEIDOU</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'gps' %}">GPS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'irnss' %}">IRNSS</a>
+                    </li>
+                </ul>
+            </div>
+            {% if user.is_authenticated %}
+                <div class="social">
+                    <a href="{% url 'logout' %}">Logout</a>
+                </div>
+            {% else %}
+                <div class="social">
+                    <a href="{% url 'login' %}">Login / Register</a>
+                </div>
+            {% endif %}
+        </div>
+    </nav>

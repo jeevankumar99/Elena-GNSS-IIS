@@ -1,0 +1,119 @@
+{%include "./partials/header.ejs"%}
+
+<div class="dropdown-sidebar">
+  <a href="#ninjasb">Overview</a>
+  <a href="#warriorsb">Architecture</a>
+  <a href="#kaisb">N a v I C</a>
+</div>
+
+<div class="gps-home-text">
+  <div id="ninjasb">
+    <h4 style="padding-top: 50px">Overview</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The Indian Regional Navigation Satellite System (NAVIC) is a
+      seven-satellite constellation developed by Indian Space Research
+      Organization (ISRO), India. NAVIC provides two services, with the standard
+      positioning service open for civilian use, and for authorized users
+      (including the military) with an assured absolute positional accuracy.
+      NAVIC is designed to cover all the parts of India and also extending
+      beyond the Indian borders. The coverage area of NAVIC with routes of
+      satellites means and includes area covering entire Pakistan, Afghanistan,
+      most of China and Middle East along with Indian Ocean. NAVIC downlink
+      signals have two bands: S1 band and L5 Band. Presently Indian users are
+      dependent on the civil GPS signals with a positional accuracy of 5 m.
+      NAVIC system is intended to provide an absolute position accuracy of (i)
+      better than 10 m throughout Indian landmass (ii) better than 20 m over the
+      Indian Ocean and (iii) approximately in a region of 1500 km around India.
+      There are 15 ground stations across the country responsible for operating
+      and/or monitoring the NAVIC seven satellite constellation. A comparative
+      analysis of NAVIC and GPS navigational satellites shows that the NAVIC
+      consists of sufficient number of satellites for regional navigation system
+      and it can also exhibit better performance. The main parameters selected
+      for our study are orbital characteristics, position accuracy and
+      positional error including Circular Error Probable (CEP), Altitude
+      variation, Geometric Dilution of Precision (GDOP) with respect to Number
+      of Satellites (NSAT), variations in Carrier to Noise (C/N0) ratio and
+      scintillation effect of both GPS and NAVIC satellite systems. Our analysis
+      showed that NAVIC systems shall be used as stand-alone systems.
+    </p>
+    <img class="one" alt="Picture1" src="assets/irnss/Picture1.png" />
+  </div>
+  <div id="warriorsb">
+    <h4 style="padding-top: 50px">Architecture</h4>
+    <img class="one" alt="Picture1" src="assets/irnss/Picture2.png" />
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      IRNSS has 7 satellites complemented with the appropriate ground
+      infrastructure as a minimum. As it is traditional in GNSS systems, the
+      architecture is described next in three different segments: the space
+      segment, the ground segment and the user segment. The IRNSS Space Segment:
+      3 of the 7 satellites are geostationary orbit (GEOs) and they are located
+      at 32.5º East, 83º East and 131.5º East longitude. There are 4
+      geostationary satellites (GSO) in orbits of 24,000 km apogee and 250 km
+      perigee inclined at 29 degrees. Two of the GSOs cross the equator at 55º
+      East and the other two at 111.75º East (two satellites in each plane). The
+      life span of the GEOs is 9.5 years and 11 years in the case of the GSOs.
+      The Constellation Design Considerations have been mainly: Minimizing the
+      Maximum DOP Minimum number of satellites Orbital slots for India for a
+      continuous visibility with the control stations IRNSS Architecture The
+      IRNSS Ground Segment consists of: ISRO Navigation Centre IRNSS Spacecraft
+      Control Facility IRNSS Range and Integrity Monitoring Stations IRNSS
+      Network Timing Centre IRNSS CDMA Ranging Stations Laser Ranging Stations
+      Data Communication Network The ground segment is in charge of estimating
+      and predicting IRNSS satellites position, calculation of integrity,
+      ionospheric and clock corrections and running the navigation software.
+    </p>
+    <img class="one" alt="Picture1" src="assets/irnss/Picture3.png" />
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The IRNSS User segment: the IRNSS user segment is made of the IRNSS
+      receivers. They will be dual-frequency receivers (L5 and S band
+      frequencies) or single frequency (L5 or S band frequency) with capability
+      to receive ionospheric correction. They will be able to receive and
+      process navigation data from other GNSS constellations and the seven IRNSS
+      satellites will be continuously tracked by the user receiver. The user
+      receiver will have a minimum gain G/T of -27 dB/K.
+    </p>
+  </div>
+  <div id="kaisb">
+    <h4 style="padding-top: 50px">N a v I C</h4>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+    The Indian Regional Navigation Satellite System (IRNSS), with an operational name of NavIC (acronym for NAVigation with Indian Constellation; also, nāvik 'sailor' or 'navigator' in Indian languages), is an autonomous regional satellite navigation system that provides accurate real-time positioning and timing services. It covers India and a region extending 1,500 km (930 mi) around it, with plans for further extension. An extended service area lies between the primary service area and a rectangle area enclosed by the 30th parallel south to the 50th parallel north and the 30th meridian east to the 130th meridian east, 1,500–6,000 km (930–3,730 mi) beyond borders.The system currently consists of a constellation of seven satellites, with two additional satellites on ground as stand-by.
+
+    The constellation is in orbit as of 2018, and the system was expected to be operational from early 2018 after a system check. NavIC will provide two levels of service, the "standard positioning service", which will be open for civilian use, and a "restricted service" (an encrypted one) for authorised users (including the military).
+    
+    NavIC based trackers are compulsory on commercial vehicles in Indiaand it is planned to become available in consumer mobile phones in the first half of 2020.
+    
+    There are plans to expand the NavIC system by increasing its constellation size from 7 to 11.
+    </p>
+  </div>
+ 
+</div>
+
+{%include "./partials/footer.ejs"%}
