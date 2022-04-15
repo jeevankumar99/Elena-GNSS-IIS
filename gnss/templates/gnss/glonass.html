@@ -16,100 +16,106 @@
 
         
         >
-      The Global Positioning System (GPS), originally Navstar GPS, is a
-      satellite-based radionavigation system owned by the United States
-      government and operated by the United States Space Force. It is one of the
-      global navigation satellite systems (GNSS) that provides geolocation and
-      time information to a GPS receiver anywhere on or near the Earth where
-      there is an unobstructed line of sight to four or more GPS satellites.
-      Obstacles such as mountains and buildings can block the relatively weak
-      GPS signals. The GPS does not require the user to transmit any data, and
-      it operates independently of any telephonic or Internet reception, though
-      these technologies can enhance the usefulness of the GPS positioning
-      information. The GPS provides critical positioning capabilities to
-      military, civil, and commercial users around the world. The United States
-      government created the system, maintains and controls it, and makes it
-      freely accessible to anyone with a GPS receiver. The GPS project was
-      started by the U.S. Department of Defense in 1973. The first prototype
-      spacecraft was launched in 1978 and the full constellation of 24
-      satellites became operational in 1993. Originally limited to use by the
-      United States military, civilian use was allowed from the 1980s following
-      an executive order from President Ronald Reagan after the Korean Air Lines
-      Flight 007 incident. Advances in technology and new demands on the
-      existing system have now led to efforts to modernize the GPS and implement
-      the next generation of GPS Block IIIA satellites and Next Generation
-      Operational Control System (OCX).Announcements from Vice President Al Gore
-      and the Clinton Administration in 1998 initiated these changes, which were
-      authorized by the U.S. Congress in 2000. During the 1990s, GPS quality was
-      degraded by the United States government in a program called "Selective
-      Availability"; this was discontinued on May 1, 2000 by a law signed by
-      President Bill Clinton. The GPS service is controlled by the United States
-      government, which can selectively deny access to the system, as happened
-      to the Indian military in 1999 during the Kargil War, or degrade the
-      service at any time. As a result, several countries have developed or are
-      in the process of setting up other global or regional satellite navigation
-      systems. The Russian Global Navigation Satellite System (GLONASS) was
-      developed contemporaneously with GPS, but suffered from incomplete
-      coverage of the globe until the mid-2000 GLONASS can be added to GPS
-      devices, making more satellites available and enabling positions to be
-      fixed more quickly and accurately, to within two meters (6.6 ft). China's
-      BeiDou Navigation Satellite System began global services in 2018, and
-      finished its full deployment in 2020. There are also the European Union
-      Galileo navigation satellite system, and India's NavIC. Japan's
-      Quasi-Zenith Satellite System (QZSS) is a GPS satellite-based augmentation
-      system to enhance GPS's accuracy in Asia-Oceania, with satellite
-      navigation independent of GPS scheduled for 2023. When selective
-      availability was lifted in 2000, GPS had about a five-meter (16 ft)
-      accuracy. GPS receivers that use the L5 band can have much higher
-      accuracy, pinpointing to within 30 centimeters (11.8 in), while high-end
-      users (typically engineering and land surveying applications) are able to
-      have accuracy on several of the bandwidth signals to within two
-      centimeters, and even sub-millimeter accuracy for long-term measurements.
-      As of May 2021, 16 GPS satellites are broadcasting L5 signals, and the
-      signals are considered pre-operational, scheduled to reach 24 satellites
-      by approximately 2027.
+        GLONASS was developed by the Soviet Union as an experimental military
+        communications system during the 1970s. When the Cold War ended, the
+        Soviet Union recognized that GLONASS had commercial applications, through
+        the system’s ability to transmit weather broadcasts,
+        communications, navigation and reconnaissance data. The first GLONASS
+        satellite was launched in 1982 and the system was declared fully
+        operational in 1993. After a period where GLONASS performance declined,
+        Russia committed to bringing the system up to the required minimum of 18
+        active satellites. Currently, GLONASS has a full deployment of 24
+        satellites in the constellation. GLONASS consists of three components: the
+        space segment, the ground segment and the user segment. The space segment
+        consists of the actual satellites in orbit. The ground segment consists of
+        a master control station (MCS) at Moscow and four monitor stations in St.
+        Petersburg, Ternopol, Eniseisk and Komsomolsk-na-Amure. The user segment
+        consists of all the military and civilian receivers. When fully deployed,
+        the space segment will consist of a constellation of 24 GLONASS
+        satellites. These satellites are arranged in three orbital planes with
+        eight satellites in each plane. Three of these 24 satellites, one in each
+        orbital plane, are active on-orbit spares that are used to replace any
+        malfunctioning satellite in that plane. A 21-satellite constellation
+        provides continuous, 4-satellite visibility over 97% of the Earth's
+        surface, whereas a 24-satellite constellation provides continuous
+        observation of no fewer than 5 satellites simultaneously from more than
+        99% of the Earth's surface. The GLONASS satellites in the constellation
+        are referenced by their slot number and by their fiequency channel. The
+        slot number refers to the position of the satellite in orbit. Slots 1-8
+        are in plane I, slots 9-16 are in plane I1 and slots 17-24 are in plane
+        111. If a GLONASS satellite is referred to as 01/12, it is in slot 1 and
+        transmitting on fiequency channel 12. 6 The GLONASS orbital planes of the
+        satellites are inclined at a nominal 64.8 degrees with respect to the
+        equatorial plane and are spaced by 120 degrees in longitude. The orbital
+        radius is 25,510 km (19,100 km above the surface of the Earth). Figure 2.1
+        shows the GLONASS orbital configuration. This arrangement results in an
+        orbital period of the satellites of approximately 11.25 hours. Therefore,
+        the orbital period is 8/17 of a sidereal day such that, after eight
+        sidereal days, the GLONASS satellites have completed exactly 17 orbital
+        revolutions. For an observer on the earth, a particular satellite will
+        reappear at the same place in the sky after eight sidereal days.
     </p>
-    <p
+    <!-- <p
 
   >
     The Architecture of Global Positioning System consists of three segments
     or units namely: GPS Space Segment GPS Control Segment GPS Receiver
     (User) Segment
-  </p>
+  </p> -->
   
   <h1>Architecture</h1>
+  <div class="image">
+    <img src="{% static 'gnss/assets/glonass/Picture2.png' %}" alt="">
+</div>
   <p
 
 >
-  The Space Unit consists of 24 active satellites which are assembled with
-  huge solar panels with rechargeable batteries that act as a power source.
-  The function of the satellites in space is to route or navigate the radio
-  signals received from the control unit to store and re-transmit the
-  message to the respective Receiver Unit.<br></br>
-  Global Positioning System (GPS) Space Segment
+The GLONASS infrastructure consists of: A constellation of 24 satellites
+distributed over three orbital planes; the System Control Centre (SSC)
+located at Krasnoznamensk; two Uplink stations; the Central Clock situated
+in Schelkovo (near Moscow) a network of four Monitoring and Measuring
+Stations (MS); five Telemetry, Tracking and Control (TT&C) stations.
+GLONASS infrastructure is organized in two segments, the Space Segment and
+the Ground Segment, to be complemented by the users receivers, which
+compose the User Segment.<br></br>
+GLONASS SPACE SEGMENT
     <br></br>
 
 </p>
 <p
 
     >
-      The Space Unit consists of 24 active satellites which are assembled with
-      huge solar panels with rechargeable batteries that act as a power source.
-      The function of the satellites in space is to route or navigate the radio
-      signals received from the control unit to store and re-transmit the
-      message to the respective Receiver Unit.<br></br>
-      GALILEO SERVICE LEVEL PERFORMANCES
+    The main functions of the Space Segment are to transmit radio-navigation
+    signals, and to store and retransmit the navigation message sent by the
+    Control Segment. The GLONASS space segment consists of 24 operational
+    satellites, distributed over three orbital planes. The longitude of
+    ascending node differs by 120 deg from plane to plane and each plane
+    comprises eight satellites, staggered by 45 deg in argument of latitude.
+    The satellites operate in circular orbits at an altitude of 19100-km, an
+    inclination of 64.8 deg and each satellite completes the orbit in
+    approximately 11 hours 15 minutes.<br></br>
+    GLONASS GROUND SEGMENT
         <br></br>
     </p>
     <p
 
     >
-      The Control Unit consists of several monitoring and control stations. The
-      monitor stations monitor the GPS satellite signals. These signals are then
-      sent to the master control station where operational specifications are
-      checked and revised before transmitting the control signals back to the
-      GPS satellites. They are sent back through ground antennas.<br></br>
-      GALILEO SERVICE LEVEL PERFORMANCES
+    The GLONASS User Segment consists of L-band radio receiver/processors and
+    antennas which receive GLONASS navigation signals, determine pseudoranges
+    (and other observables), and solve the navigation equations in order to
+    obtain their coordinates and provide a very accurate time. Although the
+    GLONASS constellation is nearing global coverage, its commercialization,
+    especially development of the user segment, has been lacking compared to
+    the U.S. GPS system. To improve the situation, the Russian government has
+    been actively promoting GLONASS for civilian use. The government is
+    planning to force all car manufactures in Russia to make cars with GLONASS
+    and they announced, in February 2011, that all passenger cars, large
+    transport vehicles and vehicles transporting dangerous materials were
+    required to use GLONASS-equipped navigators since July 2011. Besides,
+    Russian efforts to improve GLONASS accuracy are getting results, several
+    electronic companies have announced the launching of new receivers
+    supporting GLONASS.
+      <!-- GALILEO SERVICE LEVEL PERFORMANCES
         <br></br>
     </p>
     <p
@@ -118,320 +124,249 @@
     The User Unit is the term given to all GPS receivers like mobile phones,
     laptops, PC or any other device. The devices receives the signals from the
     GPS satellites and determines how far away it is from each satellite.
-  </p>
+  </p> -->
   <h1>Perfomances</h1>
 
   <p
 
 >
-  The six orbit planes have approximately 55° inclination (tilt relative to
-  the Earth's equator) and are separated by 60° right ascension of the
-  ascending node (angle along the equator from a reference point to the
-  orbit's intersection).[82] The orbital period is one-half a sidereal day,
-  i.e., 11 hours and 58 minutes so that the satellites pass over the same
-  locations[83] or almost the same locations[84] every day. The orbits are
-  arranged so that at least six satellites are always within line of sight
-  from everywhere on the Earth's surface (see animation at right).[85] The
-  result of this objective is that the four satellites are not evenly spaced
-  (90°) apart within each orbit. In general terms, the angular difference
-  between satellites in each orbit is 30°, 105°, 120°, and 105° apart, which
-  sum to 360°.[86] Orbiting at an altitude of approximately 20,200 km
-  (12,600 mi); orbital radius of approximately 26,600 km (16,500 mi),[87]
-  each SV makes two complete orbits each sidereal day, repeating the same
-  ground track each day.[88] This was very helpful during development
-  because even with only four satellites, correct alignment means all four
-  are visible from one spot for a few hours each day. For military
-  operations, the ground track repeat can be used to ensure good coverage in
-  combat zones. As of February 2019,[89] there are 31 satellites in the GPS
-  constellation, 27 of which are in use at a given time with the rest
-  allocated as stand-bys. A 32nd was launched in 2018, but as of July 2019
-  is still in evaluation. More decommissioned satellites are in orbit and
-  available as spares.
+Equivalent to the Standard Positioning Service (SPS) and the Precise
+Positioning Service (PPS) of GPS, GLONASS provides a standard precision
+(SP) navigation signal and a high precision (HP) navigation signal, also
+referred to as Channel of Standard Accuracy (CSA) and Channel of High
+Accuracy (CHA), respectively. However, as in GPS there is Standard
+Positioning Service Performance and the Precise Positioning Standard, in
+GLONASS there is no document specifying the performances provided by each
+service. According to Sergey Revnivykh, the deputy head of the GLONASS
+Mission Control Center, a GLONASS performance document will be released in
+the 2012-2013 time frame. It has been stated that at peak efficiency, the
+SP signal offers horizontal positioning accuracy within 5–10 meters,
+vertical positioning within 15 meters, a velocity vector measuring within
+10 cm/s, and timing within 200 ns. However, these specifications are
+outdated, based on the performances provided by GLONASS in the year 2000,
+before starting the Modernization Plan. Currently, accuracy comparisons
+provided by the Russian System of Differential Correction and Monitoring,
+show that GLONASS is slightly less accurate than GPS.
 </p>
 <h1>Availability</h1>
 <p
 
     >
-      Motion planning has spawned a large literature that is surveyed by several
-      scholars. This research is a part of smart farm system in the framework of
-      precision agriculture. This project summarizes portion that is related to
-      path planning for a mechatronics based multifunctional vehicle. The
-      vehicle tracking system employs the Global Positioning System (GPS) and
-      ZigBee wireless network based on mesh topology to make the system
-      communicate covering a large area. Router nodes are used for
-      re-transmission of data in the network. Software was developed for
-      acquiring data from the vehicle, storing data and displaying in real time
-      on a web site. The rationale of developing this prototype is to make use
-      of it in miscellaneous fields. The fields of interest include agriculture,
-      military, space explore and investigations. The key endeavour is to
-      develop a micro robot in the prospect with the identical functionalities
-      of this prototype. Accuracy can be improved through precise monitoring and
-      measurement of existing GPS signals in additional or alternative ways. The
-      largest remaining error is usually the unpredictable delay through the
-      ionosphere. The spacecraft broadcast ionospheric model parameters, but
-      some errors remain. This is one reason GPS spacecraft transmit on at least
-      two frequencies, L1 and L2. Ionospheric delay is a well-defined function
-      of frequency and the total electron content (TEC) along the path, so
-      measuring the arrival time difference between the frequencies determines
-      TEC and thus the precise ionospheric delay at each frequency. Military
-      receivers can decode the P(Y) code transmitted on both L1 and L2. Without
-      decryption keys, it is still possible to use a codeless technique to
-      compare the P(Y) codes on L1 and L2 to gain much of the same error
-      information. This technique is slow, so it is currently available only on
-      specialized surveying equipment. In the future, additional civilian codes
-      are expected to be transmitted on the L2 and L5 frequencies. All users
-      will then be able to perform dual-frequency measurements and directly
-      compute ionospheric delay errors. A second form of precise monitoring is
-      called Carrier-Phase Enhancement (CPGPS). This corrects the error that
-      arises because the pulse transition of the PRN is not instantaneous, and
-      thus the correlation (satellite–receiver sequence matching) operation is
-      imperfect. The phase difference error in the normal GPS amounts to 2–3 m
-      (6 ft 7 in–9 ft 10 in) of ambiguity. CPGPS working to within 1% of perfect
-      transition reduces this error to 3 cm (1.2 in) of ambiguity. By
-      eliminating this error source, CPGPS coupled with DGPS normally realizes
-      between 20–30 cm (7.9–11.8 in) of absolute accuracy.
+    The low number of operational satellites in the constellation (in 2001
+    there were only seven satellites) along with a ground segment limited to
+    Russian territory, have been the main reasons of GLONASS poor availability
+    performance. The modernization of the Ground Segment, including new
+    monitoring stations (some of them outside Russia) and especially the
+    increase of the number of satellites in the constellation (in the present,
+    GLONASS constellation consists of 31 satellites in orbit although only 23
+    of them are operational), have led to almost worldwide coverage and 100%
+    availability in the Russian territory. The table included below shows the
+    increasing of the number of satellites and the availability performance
+    (calculated as the percentage of time during which the condition PDOP <= 6
+    is valid at mask angles >= 5 deg) from the beginning of 2007 to beginning
+    2012.
+
     </p>
+    <div class="image">
+      <img src="{% static 'gnss/assets/glonass/Picture3.png' %}" alt="">
+  </div>
+  <p>
+    According to the table above, in January 23 2012 there were 31 GLONASS
+    satellites in orbit, being 23 of them in operational status. The following
+    figure presents the corresponding worldwide Availability Performance
+    (calculated as the percentage of time during which the condition PDOP = 6
+    is valid for a masking angle of 5 degrees).
+
+  </p>
+  <div class="image">
+    <img src="{% static 'gnss/assets/glonass/Picture4.png' %}" alt="">
+</div>
     <h1>Services</h1>
     <p
 
   >
-    A Differential Global Positioning System (DGPS) is an enhancement to the
-    Global Positioning System (GPS) which provides improved location accuracy,
-    in the range of operations of each system, from the 15-metre (49 ft)
-    nominal GPS accuracy to about 1–3 centimetres (0.39–1.18 in) in case of
-    the best implementations. Each DGPS uses a network of fixed ground-based
-    reference stations to broadcast the difference between the positions
-    indicated by the GPS satellite system and known fixed positions. These
-    stations broadcast the difference between the measured satellite
-    pseudoranges and actual (internally computed) pseudoranges, and receiver
-    stations may correct their pseudoranges by the same amount. The digital
-    correction signal is typically broadcast locally over ground-based
-    transmitters of shorter range. The United States Coast Guard (USCG) and
-    the Canadian Coast Guard (CCG) each run DGPSes in the United States and
-    Canada on longwave radio frequencies between 285 kHz and 325 kHz near
-    major waterways and harbors. The USCG's DGPS was named NDGPS (Nationwide
-    DGPS) and was jointly administered by the Coast Guard and the U.S.
-    Department of Defense's Army Corps of Engineers (USACE). It consisted of
-    broadcast sites located throughout the inland and coastal portions of the
-    United States including Alaska, Hawaii and Puerto Rico.Other countries
-    have their own DGPS. A similar system which transmits corrections from
-    orbiting satellites instead of ground-based transmitters is called a
-    Wide-Area DGPS (WADGPS) Satellite Based Augmentation System.
+  Equivalent to the Standard Positioning Service (SPS) and the Precise
+  Positioning Service (PPS) of GPS, GLONASS provides a standard precision
+  (SP) navigation signal and a high precision (HP) navigation signal, namely
+  the Channel of Standard Accuracy (CSA) and Channel of High Accuracy (CHA),
+  respectively.
+
+    <h1
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      STANDARD PRECISION SERVICES
+    </h1>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      Originally, the Standard Precision signal was transmitted only on L1,
+      whereas the High Accuracy code was transmitted both on L1 and L2. The
+      modernization of GLONASS began with the launch of second generation of
+      satellites, GLONASS-M. Since that moment on, a second civil signal on L2
+      band is transmitted, allowing user to cancel out the ionospheric
+      refraction. Currently, with the first GLONASS-K sent into orbit, a third
+      civil signal on L3 band is available for civilian users (for more
+      information, please refer to GLONASS Space Segment). The Standard
+      Precision signals are generated by the Modulo-2 addition of the following
+      three binary signals: PR ranging code transmitted at 511 kbps. Navigation
+      message transmitted at 50 bps, and 100 Hz auxiliary meander sequence.
+      Given sequences are used for modulation of carriers in L1 and L2 sub-bands
+      when generating standard accuracy signals. PR ranging code is a sequence
+      of maximum length of shift register with a period 1 millisecond and bit
+      rate 511 kbps. PR ranging code is sampled at the output of 7th stage of
+      the 9-stage shift register. The initialization vector to generate this
+      sequence is (111111111). The first character of the PR ranging code is the
+      first character in the group 111111100, and it is repeated every 1
+      millisecond. The generating polynomial, which corresponds to the 9-stage
+      shift register, is G(X) = 1 + X5 + X9..
+    </p>
+    <h1
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      HIGH PRECISION SERVICE
+    </h1>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      The High Precision signal is broadcast in phase quadrature with the SP
+      signal, effectively sharing the same carrier wave as the SP signal, but
+      with a ten times higher bandwidth (5.11 Mbps) than the SP signal. GLONASS
+      is not degraded artiﬁcially by the system operators. Neither there are
+      plans to introduce such measures in future. The GLONASS P-code never was
+      published by the system operators, but it was made known to the scientific
+      community. This means, the GLONASS P-code is fully available. However,
+      along with the P-code not being published by the system operators, it
+      neither was officially released for use outside the Russian Armed Forces.
+      Instead, they reserve the right to alter the code in future. This keeps a
+      number of potential users and receiver manufacturers from actually
+      implementing the GLONASS P-code.
+    </p>
+    <h1
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      MILITARY SIGNAL ACCESS
+    </h1>
+    <p
+      style="
+        font-size: 20px;
+        padding-top: 25px;
+        margin: 25px 50px 75px 100px;
+        text-align: justify;
+      "
+    >
+      In January 2004 the Russian Space Agency (RSA) announced a deal with
+      India's space agency, wherein the two government agencies would
+      collaborate to restore GLONASS system to constant coverage of Russian and
+      Indian territory by 2008 with 18 satellites, and be fully operational with
+      all 24 satellites by 2010. During a December 2005 summit between Indian
+      Prime Minister Manmohan Singh and Russian President Vladimir Putin, it was
+      agreed that India would share some of the development costs of the
+      GLONASS-K series and launch two of the new satellites from India, in
+      return for access to the HP signal. On December 21, 2010, during the visit
+      of Russian President Dmitry Medvedev to India, Russia and India signed an
+      agreement to share high precision signals from the Global Navigation
+      Satellite System (GLONASS). India is the first country that has been given
+      access to the GLONASS military signal.
+    </p>
   </p>
   <h1>Status</h1>
+  <div class="image">
+    <img src="{% static 'gnss/assets/glonass/Picture5.png' %}" alt="">
+  </div>
   <p
 
 >
-  To meet growing demands and stay competitive internationally, the U.S.
-  government is committed to a long-term modernization program that will
-  improve GPS performance, including more robust resistance to interference.
-  The GPS modernization program is an ongoing, multibillion-dollar effort to
-  upgrade the GPS space and control segments with new features to improve
-  GPS performance. These features include new civilian and military signals.
-  Ending Selective Availability The first step in GPS modernization took
-  place in May 2000, when President Bill Clinton directed the Department of
-  Defense to turn off the GPS Selective Availability (SA) feature. SA was an
-  intentional degradation of civilian GPS accuracy, implemented on a global
-  basis through the GPS satellites. During the 1990s, civil GPS readings
-  could be incorrect by as much as a football field (100 meters). On the day
-  SA was deactivated, civil GPS accuracy improved tenfold, benefiting civil
-  and commercial users worldwide. In 2007, the U.S. government announced
-  plans to permanently eliminate SA by building the GPS III satellites
-  without it. New Civil Signals The new signals are phasing in incrementally
-  as new GPS satellites are launched to replace older ones. Most of the new
-  signals will be of limited use until they are broadcast from 18 to 24
-  satellites. Aimed at improving the performance for civilian users, the GPS
-  is in the process of fielding three new signals designed for civilian use:
-  L2C, L5, and L1C. The legacy civil signal, called L1 C/A or C/A at L1,
-  will continue broadcasting in the future, for a total of four civil GPS
-  signals. Users must upgrade their equipment to benefit from the new
-  signals. L2C (1227.6 MHz): it is the second civilian GPS signal, designed
-  specifically to meet commercial needs. It enables the development of
-  dual-frequency civil GPS receivers to correct the ionospheric group delay.
-  For professional users with existing dual-frequency operations, L2C
-  delivers faster signal acquisition, enhanced reliability, and greater
-  operating range. L2C broadcasts at a higher effective power than the
-  legacy L1 C/A signal, making it easier to receive under trees and even
-  indoors. This signal is available since 2005, with the launch of the first
-  IIR-M satellite. Every GPS satellite launched since then has included an
-  L2C transmitter. In April 2014, CNAV messages on the L2C signals started
-  to be broadcast. L2C remains in pre-operational status. L5 (1176.45 MHz):
-  L5 is broadcast in a radio band reserved exclusively for aviation safety
-  services. Future aircraft will use L5 in combination with L1 C/A to
-  improve accuracy (via ionospheric correction) and robustness (via signal
-  redundancy). Beyond transportation, L5 will provide users worldwide with
-  the most advanced civilian GPS signal, as it transmits at a higher power
-  than current civil GPS signals, and has a wider bandwidth. Its lower
-  frequency may also enhance reception for indoor users. It will be
-  compatible with other GNSS systems, with the goal to be interoperable as
-  well. This signal is available since the launch of the Block IIF
-  satellites (May 28th 2010). L1C (1575.42 MHz): It has been designed for
-  interoperability with Galileo. It will be backward compatible with the
-  current civil signal on L1, be broadcast at a higher power level, and
-  include advanced design for enhanced performance. The design will improve
-  mobile GPS reception in cities and other challenging environments. Other
-  satellite navigation providers are adopting L1C as a future standard for
-  international interoperability. Japan's Quasi-Zenith Satellite System
-  (QZSS), the Indian Regional Navigation Satellite System (IRNSS), and
-  China's BeiDou System all plan to broadcast L1C. The first GPS satellite
-  transmitting L1C signals was launched in December 2018. An enhancement to
-  this L1C signal is being analysed, which is called CHIMERA (Chips Message
-  Robust Authentication). This technique consists on adding encrypted
-  watermarks to the L1C signal that not only let users know when a signal is
-  being spoofed but also makes it possible to authenticate the location of a
-  GPS receiver to another party. Once L2C and L5 are fully operational,
-  their features will obviate the need for codeless or semi-codeless GPS
-  receivers, which many GPS professionals use today to attain very high
-  accuracy. Such receivers work by exploiting characteristics of the
-  encrypted military P(Y) signal at the L2 frequency to achieve
-  dual-frequency capability. Then, the U.S. government encourages all users
-  of codeless/semi-codeless GPS technology to plan on using the modernized
-  civil signals by December 31, 2020, as P(Y) may change after that date. In
-  addition to the civil signals, it is planned to include a new military
-  signal, the M-code, in L1 and L2 frequencies. New Control Segment
-  Regarding the Ground Segment, the new Operational Control Segment (OCX)
-  will replace the current GPS Operational Control System placed at
-  Schriever Air Force Base.[7] The OCX will maintain backwards compatibility
-  with the Block IIR and IIR-M constellation satellites, providing command
-  and control of the new GPS IIF and GPS III families of satellites, and
-  enabling new modernized civil signal capabilities. According to Raytheon
-  the "OCX is the next generation operational gateway service designed to
-  provide secure, accurate and reliable navigation and timing information to
-  effectively support military, commercial and civil users. It will include
-  enhanced space launch support, increased situational awareness for GPS
-  operators and support for future satellite blocks with advanced
-  capabilities such as new signals, NAVWAR capabilities, high-speed
-  cross-links and additional payloads." With a dedicated classified
-  facility, OCX will support advanced mission planning for the Department of
-  Defense users. Raytheon won the contract to build the Next Generation GPS
-  Control Segment (OCX) on March 2010. The OCX development is split into
-  three phases: Block 0 is the Launch and Control System (LCS) intended to
-  control Launch and Early Orbit (LEO) operations and the on-orbit checkout
-  of all GPS III satellites. OCX Block 0 is a subset of OCX Block 1
-  providing the hardware, software, and cybersecurity base for Block 1.
-  Block 1 fields the operational capability to control all legacy satellites
-  and civil signals (L1 C/A), military signals (L1P(Y), L2P(Y)) as well as
-  the GPS III satellites and the modernized civil signal (L2C) and the
-  aviation safety-of-flight signal (L5). In addition, Block 1 will field the
-  basic operational capability to control the modernized military signals
-  (L1M and L2M (M-Code)), and the globally compatible signal (L1C). It also
-  fully meets information assurance/cyber defense requirements. Block 2
-  fields the advanced operational capability to control the advanced
-  features of the modernized military signals (L1M and L2M (M-Code)). Block
-  2 will be delivered concurrently with Block 1. New GPS satellites The GPS
-  constellation is a mix of new and legacy satellites. The new generations,
-  or blocks, of GPS satellites under development as part of the GPS
-  modernization program are the following: GPS Block IIR(M) The IIR(M)
-  series of satellites are an upgraded version of the IIR series. The "M" in
-  IIR(M) stands for modernized, referring to the new civil and military GPS
-  signals added with this generation of spacecraft. Developed by Lockheed
-  Martin, there are eight IIR(M) satellites: SVN-48 through SVN-50, SVN-52,
-  SVN-53, SVN-55, SVN-57, and SVN-58. The first IIR(M) was launched in
-  September 2005, and the last launch occurred in August 2009. The key
-  improvements of this block are: the inclusion of second civilian GPS
-  signal (L2C) for improved performance in commercial applications, two new
-  military signals providing enhanced military jam-resistance and flexible
-  power levels for military signals. GPS Block IIF The IIF series expand on
-  the capabilities of the IIR(M) series with the addition of a third civil
-  signal in a frequency protected for safety-of-life transportation. The "F"
-  in IIF stands for follow-on. Compared to previous generations, GPS IIF
-  satellites have a longer life expectancy and a higher accuracy
-  requirement. Each spacecraft uses a mix of rubidium and cesium atomic
-  clocks to keep time within 8 billionths of a second per day. The IIF
-  series will improve the accuracy, signal strength, and quality of GPS.
-  Developed by Boeing, the IIF series includes a total of 12 satellites:
-  SVN-62 through SVN-73. The first IIF satellite was launched in May 2010.
-  On March 25, 2015, the IIF-9 satellite was successfully launched aboard a
-  Delta IV launch vehicle from Cape Canaveral, Air Force Station in Florida.
-  This satellite, identified by SVN-71 and PRN-26 replaced the SVN-35
-  operating in the B plane slot 1F. The key improvements of this block are:
-  operational version of the third civilian GPS signal (L5) for
-  transportation safety, 12-year design lifespan and extremely accurate
-  atomic clocks. In a Notice to NAVSTAR Users (NANU 2015028), the U.S. Air
-  Force announced that the ninth GPS-IIF satellite, SVN-71/PRN-26, launched
-  on March 25, 2015, completed its operational checkout and was set to
-  healthy and usable on Monday (April 20, 2015). The 10th GPS-IIF satellite,
-  destined for plane C/slot 3 of the GPS constellation, was launched from
-  Cape Canaveral on July 15th, 2015. After some initial delays, the 11th
-  GPS-IIF satellite, destined for plane E/slot 2 of the GPS constellation,
-  was launched on October 31st, 2015. The 12th and last GPS-IIF satellite
-  was launched from Cape Canaveral on February 5th, 2016. GPS Block III
-  (Increment IIIA and beyond) The GPS III series is the future block of GPS
-  satellites (SVN-74 and up). GPS III will provide more powerful signals in
-  addition to enhanced signal reliability, accuracy, and integrity, all of
-  which will support precision, navigation, and timing services. The first
-  set of these satellites, under development by Lockheed Martin, is
-  designated GPS IIIA. The key improvements of GPS IIIA are: fourth civilian
-  GPS signal (L1C) for international interoperability, 15-year design
-  lifespan. The first GPS Block III satellite was launched in December 2018.
-  GPS IIIF, will deliver GPS III satellites beyond the first ten SVs being
-  delivered by the GPS III program. GPS IIIF SVs (11-32) will introduce new
-  capabilities to meet increased demands of both military and civilian
-  users. They will maintain the technical baseline of GPS III but reducing
-  the overall size, weight, and power required to satisfy the positioning,
-  navigation, timing and Nuclear Detonation Detection System (NDS) mission
-  areas with a redesigned NDS. It also looks to bring aboard new
-  capabilities by hosting a Search and Rescue GPS payload designed to assist
-  with the global search and rescue mission area. It enables precision
-  ranging measurements by hosting a Laser Retro-Reflector array. It will
-  address the consolidation of telemetry, tracking, and commanding
-  frequencies by enabling compliance with the Unified S-Band capabilities.
-  Finally, the program will look to address increased anti-jam capabilities
-  for the military with a Regional Military Protection capability.
+As on June 5, 2021, the GLONASS system consists of total 27satellites, of which 23 are operational, 1 is undergoing maintenance, 1 as Spares and 2 in flight tests phase. The system requires 18 satellites for continuous navigation services covering the entire territory of the Russian Federation, and 24 satellites to provide services worldwide.
+The system GLONASS covers the navigational floor 100% territory to Russia.
+The GLONASS system’s capability enhancements through satellites generations are listed in the table
 </p>
+<div class="image">
+  <img src="{% static 'gnss/assets/glonass/Picture6.png' %}" alt="">
+</div>
 <h1>Daily Monitoring</h1>
-    <p
-
-  >
-    A Differential Global Positioning System (DGPS) is an enhancement to the
-    Global Positioning System (GPS) which provides improved location accuracy,
-    in the range of operations of each system, from the 15-metre (49 ft)
-    nominal GPS accuracy to about 1–3 centimetres (0.39–1.18 in) in case of
-    the best implementations. Each DGPS uses a network of fixed ground-based
-    reference stations to broadcast the difference between the positions
-    indicated by the GPS satellite system and known fixed positions. These
-    stations broadcast the difference between the measured satellite
-    pseudoranges and actual (internally computed) pseudoranges, and receiver
-    stations may correct their pseudoranges by the same amount. The digital
-    correction signal is typically broadcast locally over ground-based
-    transmitters of shorter range. The United States Coast Guard (USCG) and
-    the Canadian Coast Guard (CCG) each run DGPSes in the United States and
-    Canada on longwave radio frequencies between 285 kHz and 325 kHz near
-    major waterways and harbors. The USCG's DGPS was named NDGPS (Nationwide
-    DGPS) and was jointly administered by the Coast Guard and the U.S.
-    Department of Defense's Army Corps of Engineers (USACE). It consisted of
-    broadcast sites located throughout the inland and coastal portions of the
-    United States including Alaska, Hawaii and Puerto Rico.Other countries
-    have their own DGPS. A similar system which transmits corrections from
-    orbiting satellites instead of ground-based transmitters is called a
-    Wide-Area DGPS (WADGPS) Satellite Based Augmentation System.
-  </p>
+<div class="image">
+  <img src="{% static 'gnss/assets/glonass/Picture7.png' %}" alt="">
+</div>
+   
   <h1>Zone Calculation</h1>
     <p
 
   >
-    A Differential Global Positioning System (DGPS) is an enhancement to the
-    Global Positioning System (GPS) which provides improved location accuracy,
-    in the range of operations of each system, from the 15-metre (49 ft)
-    nominal GPS accuracy to about 1–3 centimetres (0.39–1.18 in) in case of
-    the best implementations. Each DGPS uses a network of fixed ground-based
-    reference stations to broadcast the difference between the positions
-    indicated by the GPS satellite system and known fixed positions. These
-    stations broadcast the difference between the measured satellite
-    pseudoranges and actual (internally computed) pseudoranges, and receiver
-    stations may correct their pseudoranges by the same amount. The digital
-    correction signal is typically broadcast locally over ground-based
-    transmitters of shorter range. The United States Coast Guard (USCG) and
-    the Canadian Coast Guard (CCG) each run DGPSes in the United States and
-    Canada on longwave radio frequencies between 285 kHz and 325 kHz near
-    major waterways and harbors. The USCG's DGPS was named NDGPS (Nationwide
-    DGPS) and was jointly administered by the Coast Guard and the U.S.
-    Department of Defense's Army Corps of Engineers (USACE). It consisted of
-    broadcast sites located throughout the inland and coastal portions of the
-    United States including Alaska, Hawaii and Puerto Rico.Other countries
-    have their own DGPS. A similar system which transmits corrections from
-    orbiting satellites instead of ground-based transmitters is called a
-    Wide-Area DGPS (WADGPS) Satellite Based Augmentation System.
+  GDOP ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit
+  sapien, pellentesque et lectus sed, finibus fringilla enim. Vivamus
+  laoreet lorem consequat purus ultrices vulputate. Vestibulum a euismod
+  nibh. Duis ut metus semper, tristique ipsum sit amet, pulvinar erat. Sed
+  sit amet imperdiet nunc. Vestibulum vitae ornare tellus. Pellentesque
+  mattis gravida dui, in placerat urna sodales vitae. Nunc hendrerit turpis
+  eu risus volutpat, non sagittis massa molestie. Nam hendrerit ante ligula,
+  vel efficitur neque sollicitudin a.Suspendisse potenti. Morbi cursus massa
+  lacus, a fringilla purus rutrum eget. Cras aliquet quam urna, sed varius
+  diam porta vel. Proin fermentum dolor nec ipsum cursus fringilla. Vivamus
+  lobortis congue ullamcorper. Suspendisse enim lorem, mattis at cursus ac,
+  blandit at ligula. Aenean dignissim tortor in eros hendrerit dictum.
+  Nullam sed sapien ac augue egestas consectetur a vitae ipsum. Vivamus id
+  venenatis risus, sit amet aliquet libero. Sed quis purus bibendum,
+  consequat est eu, tempor arcu. Aenean imperdiet arcu sed dui viverra, id
+  vestibulum tellus pretium. Quisque vel sem a leo accumsan lobortis. Cras
+  dignissim purus interdum, interdum orci eget, aliquam magna Dummy text
+  refers to the bits of content that are used to fill a website mock-up.
+  This text helps web designers better envision how the website will look as
+  a finished product. It is important to understand that dummy text has no
+  meaning whatsoever. Its sole purpose is to fill out blank spaces with
+  “word-like” content, without making any copyright infringements. Dummy
+  text is also known as filler text or placeholder text, and it has been
+  used for a long time in the various fields of online publishing.Now you
+  know what dummy text is, let’s learn about its usefulness. Some people say
+  that they don’t need to use a dummy text generator to deliver a web design
+  project to the customer. Even though this might be true, the effect that
+  the final project will produce on the client won’t be as satisfactory as
+  in the case of one with included filler content.Lorem ipsum dolor sit amet
+  consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint
+  commodi repudiandae consequuntur voluptatum laborum numquam blanditiis
+  harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque
+  rerum! Provident similique accusantium nemo autem. Veritatis obcaecati
+  tenetur iure eius earum ut molestias architecto voluptate aliquam nihil,
+  eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
+  error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo
+  neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente
+  officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
+  alias error harum maxime adipisci amet laborum. Perspiciatis minima
+  nesciunt dolorem! Officiis iure rerum voluptates a cumque velit quibusdam
+  sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
+  temporibus enim commodi iusto libero magni deleniti quod quam
+  consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+  doloremque. Quaerat provident commodi consectetur veniam similique ad
+  earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
+  fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
+  suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab
+  laudantium modi minima sunt esse temporibus sint culpa, recusandae aliquam
+  numquam totam ratione voluptas quod exercitationem fuga. Possimus quis
+  earum veniam quasi aliquam eligendi, placeat qui corporis!
   </p>
 
         </div>      
