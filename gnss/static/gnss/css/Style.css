@@ -26,6 +26,7 @@ html, body{
     --Josefin : 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
     --Livvic : 'Livvic', cursive;
+    --Bookman: 'Bookman', serif;
 }
 
 
@@ -55,7 +56,7 @@ ul{
 }
 
 h1{
-    font-family: var(--Lexend);
+    /* font-family: var(--Lexend); */
     font-size: 2.5rem;
 }
 
@@ -98,7 +99,7 @@ span{
 }
 
 p{
-    font-family: var(--Lexend);
+    font-family: var(--Livvic);
     color: var(--text-gray);
 }
 

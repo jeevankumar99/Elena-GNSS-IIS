@@ -24,12 +24,15 @@ html, body {
 
 }
 .con h1{
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #fff;
 }
-.con p{
-    font-size: 1.5rem;
+.con ,p{
+    font-family: var(--Livvic);
+    font-weight:normal;
+    
     color: #fff;
 }
 

@@ -52,23 +52,27 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="{% url 'gnss' %}">Gnss</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="{% url 'glonass' %}">GLONASS</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="{% url 'galileo' %}">GALILEO</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="{% url 'beidou' %}">BEIDOU</a>
+                        <a href="{% url 'irnss' %}">NavIC</a>
                     </li>
                     <li class="nav-link">
                         <a href="{% url 'gps' %}">GPS</a>
                     </li>
                     <li class="nav-link">
-                        <a href="{% url 'irnss' %}">IRNSS</a>
+                        <a href="{% url 'glonass' %}">GLONASS</a>
                     </li>
+                    <li class="nav-link">
+                        <a href="{% url 'galileo' %}">Galileo</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'beidou' %}">Beidou</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'gnss' %}">GNSS</a>
+                    </li>
+      
+         
+             
+        
                 </ul>
             </div>
             {% if user.is_authenticated %}
