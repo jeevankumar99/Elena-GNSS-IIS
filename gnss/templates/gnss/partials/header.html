@@ -77,11 +77,11 @@
             </div>
             {% if user.is_authenticated %}
                 <div class="social">
-                    <a href="{% url 'logout' %}">Logout</a>
+                    {% comment %} <a href="{% url 'logout' %}">Logout</a> {% endcomment %}
                 </div>
             {% else %}
                 <div class="social">
-                    <a href="{% url 'login' %}">Login / Register</a>
+                    {% comment %} <a href="{% url 'login' %}">Login / Register</a> {% endcomment %}
                 </div>
             {% endif %}
         </div>
